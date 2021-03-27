@@ -82,8 +82,11 @@ img{
 .general{
     padding: 30px 0;
 }
-.cadetblue_color{
+.cadetblue_bg{
     background-color: cadetblue !important;
+}
+.cadetblue_color{
+    color: cadetblue;
 }
 .blue_bg{
     background-color: steelblue !important;
@@ -113,8 +116,20 @@ img{
 .border{
     border: none !important;
 }
+.opacity{
+    opacity: 0.5;
+}
+.opacity8{
+    opacity: 0.8;
+}
 /* =====================header============ */
-
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
 header .nav1{
     background-color: #F5F5F5;
     height: 50px;
@@ -132,8 +147,10 @@ ul{
 header ul li{
     display: inline-block;
 }
+header .navli li:hover,
 header .nav2 ul li:hover,
-header ul li a:hover{
+header ul li:hover a{
+    cursor: pointer;
     background-color: rgb(200, 199, 199);
 }
 header .form-group input{
@@ -154,11 +171,10 @@ header .form-group .btn:hover{
 }
 /* --------headerbetwen------- */
 
-header .headerBetween{
+main .headerBetween{
     height: 100px;
 }
-
-header .headerBetween .logo{
+main .headerBetween .logo{
     height: 40px;
     width: 40px;
     text-align: center;
@@ -170,21 +186,12 @@ header .headerBetween .logo{
     border-radius: 50%;
     background-image: linear-gradient(#CCFF00, #006699);
 }
-header .headerBetween .textLogo{
+main .headerBetween .textLogo{
     font-size: 28px;
     font-family: fantasy;
 
 }
-.opacity{
-    opacity: 0.5;
-}
-.background{
-    background: url(/img/images/banner.jpg)top center/cover no-repeat;
-    padding-top: 5%;
-    margin: 8px 0;
-    position: relative;
-}
-header .background .textBanner{
+main .background .textBanner{
     position: absolute;
     bottom: 20px;
     width: 100%;
@@ -192,16 +199,23 @@ header .background .textBanner{
     color: white;
     font-family: cursive;
 }
-header .textBanner .insitebanner1{
+main .textBanner .insitebanner1{
     font-size: 28px;
     letter-spacing: 14px;
 }
-header .textBanner .insitebanner2{
+main .textBanner .insitebanner2{
     font-size: 10px;
-    opacity: 0.8;
     letter-spacing: 4px;
     
 }
+
+.background{
+    background: url("../img/images/banner.jpg")top center/cover no-repeat;
+    padding-top: 5%;
+    margin: 8px 0;
+    position: relative;
+}
+
 
 /* ---------- */
 
@@ -221,6 +235,8 @@ header .navli li{
     border-top: none;
     border-bottom: none;
     border-right: none;
+    /* border-right: 0.1px solid #ddd !important; */
+
 }
 header .navli .li{
     border-right: 0.1px solid #ddd !important;
@@ -246,6 +262,9 @@ header .nav2 .icon_header a i[class*="fa-"]:hover{
 }
 
 /* =====================main==================== */
+main{
+    margin-top:100px;
+}
 .page_background{
     background-color: #F5F5F5 !important;
     margin-top: 2px;
@@ -385,7 +404,7 @@ header .nav2 .icon_header a i[class*="fa-"]:hover{
 /* ---------end--------- */
 
 #sec1 .person_avt{
-    padding: 35px 10px 35px 10px;
+    padding: 25px 10px 25px 10px;
     
 }
 #sec1 .person_avt .avt1_sec1
@@ -406,6 +425,9 @@ header .nav2 .icon_header a i[class*="fa-"]:hover{
     border-bottom: none;
     border-top: none;
     box-shadow: 0 8px 4px rgba(199, 200, 199, 0.3);
+}
+.none-boxshadow{
+    box-shadow: none;
 }
 #sec1 .avt1_sec1 img{
     width: 40%;
@@ -530,3 +552,75 @@ hr{
     font-size: 14px !important;
 }
 
+.text-normal{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: justify;
+}
+#sec10{
+
+}
+#sec10 .choose{
+    line-height: 30px;
+}
+#sec10 ul li{
+    padding: 0 10px;
+}
+
+/* ==========footer====== */
+#footer{
+    background-color: rgb(95, 93, 93);
+    padding-bottom: 30px;
+}
+
+#footer .logo{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: cursive;
+    color: #000;
+    border-radius: 50%;
+    background-color: #fff;
+}
+#footer .textLogo{
+    font-size: 20px;
+    font-family: fantasy;
+}
+#footer .text-about{
+    font-size: 12px;
+}
+#footer ul li a{
+    color: #fff;
+    font-size: 12px;
+    line-height: 2;
+    opacity: 0.8;
+}
+#footer .follow p{
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+#footer .title{
+    font-size: 20px;
+    padding-top: 5px;
+    font-family: monospace;
+}
+#footer .imgfooter > div > div{
+    padding: 10px;
+    margin-left: -10px;
+    width: 100%;
+}
+#footerBottom{
+    height: 70px;
+    background-color: rgb(54, 48, 48);
+}
+#footerBottom div p{
+    line-height: 70px;
+    font-size: 12px;
+}
