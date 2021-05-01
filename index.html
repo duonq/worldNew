@@ -14,7 +14,7 @@
     <header>
 
         <nav class="nav1">
-            <div class="container margin_left-right container_flex navbar">
+            <div class="container margin_left-right container_flex navbar flex_wrap">
                 <div class="container_flex">
                     <ul>
                         <li><a href="#" class="text_white cadetblue_bg row textTranf">Friday, may 5, 2021</a></li>
@@ -31,52 +31,52 @@
 
 
 
-                <div class="form-group">
-                    <input type="text" class="" placeholder="Your email address">
+                <form class="form-group">
+                    <input type="text" class="" placeholder="Your email address" required>
                     <button type="submit" class="btn textTranf">subscribe</button>
-                </div>
+                </form>
 
             </div>
         </nav>
 
-        <!-- <div class="container margin_left-right container_flex headerBetween">
-            <div class="col_half container_flex">
-                <p class="logo margin-onunder">W</p>
-                <p class="textLogo row margin-onunder textTranf">World<span class="opacity">News</span></p>
-            </div>
-
-            <div class="col_half background">
-                <div class="textBanner">
-                    <p class="insitebanner1 textTranf">palao</p>
-                    <p class="insitebanner2 textTranf opacity8">primal gastronomi</p>
-                </div>
-            </div>
-        </div> -->
-
         <nav class="nav1 nav2">
             <div class="navbar container margin_left-right container_flex textTranf">
-                <ul class="navli">
+
+                <ul class="navli" id="topBar">
                     <li><a href="#">Home</a></li>
                     <li><a href="#sec2">Features</a></li>
                     <li><a href="#sec3">Business</a></li>
-                    <li><a href="#sec4">Mobile</a></li>
-                    <li><a href="#sec5">Fashion</a></li>
+                    <li><a href="mobile.html" target="_blank">Mobile</a></li>
+                    <li><a href="fashion.html">Fashion</a></li>
                     <li><a href="#sec7">It-tech</a></li>
-                    <li><a href="#sec6">Travel & sport</a></li>
+                    <li>
+                        <a href="#sec6" target="_blank">Travel & sport <i class="fa fa-caret-down"></i></a>
+                        <ul class="subnav">
+                            <li><a href="travel.html">Travel</a></li>
+                            <li><a href="sport.html">Sport</a></li>
+
+                        </ul>
+                    </li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Shop</a></li>
                     <li class="li"><a href="#">Pages</a></li>
                 </ul>
-
+                <div id="icon">
+                    <div class="icon">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
                 <div class="icon_header">
                     <a><i class="fa fa-search"></i></a>
-                    <a><i class="fa fa-user"></i></a>
+                    <a href="login.html" target="_blank"
+                        onclick="document.getElementById('login').style.display = 'block'"><i class="fa fa-user"></i>
+                    </a>
                     <a><i class="fa fa-shopping-cart cart"></i></a>
+
                 </div>
 
             </div>
         </nav>
-
 
     </header>
 
@@ -98,23 +98,24 @@
         <!-- ===========slide============= -->
         <div class="page_background general">
             <div id="sec1">
-                <div class="container container_flex margin_left-right">
-                    <div class="container_flex col_two-third">
+                <div class="container container_flex margin_left-right flex_wrap">
+                    <div class="container_flex col_two-third ipap">
                         <div class="slide">
                             <div class="sliders container_flex">
-                                <div class="slide1" id="slide1">
+
+                                <div class="slide1 zoom" id="slide1">
                                     <img src="img/images/slide_sec1_img1.jpg" alt="" class="mySlide">
                                 </div>
-                                <div class="slide1" id="slide2">
+                                <div class="slide1 zoom" id="slide2">
                                     <img src="img/images/sec6_img1.jpg" alt="" class="mySlide">
                                 </div>
-                                <div class="slide1" id="slide3">
+                                <div class="slide1 zoom" id="slide3">
                                     <img src="img/images/sec3_img1.jpg" alt="" class="mySlide">
                                 </div>
-                                <div class="slide1" id="slide4">
+                                <div class="slide1 zoom" id="slide4">
                                     <img src="img/images/sec4_img1.jpg" alt="" class="mySlide">
                                 </div>
-                                <div class="slide1" id="slide5">
+                                <div class="slide1 zoom" id="slide5">
                                     <img src="img/images/sec5_img1.jpg" alt="" class="mySlide">
                                 </div>
 
@@ -160,7 +161,7 @@
                                     </ul>
                                 </div>
 
-                                <div class="person_avt container_flex margin_left-right">
+                                <div class="person_avt container_flex margin_left-right mobi">
                                     <div class="col_third container_flex avt1_sec1">
                                         <img src="img/images/slide_sec1_avt1.png" alt="">
                                         <div class="group">
@@ -178,7 +179,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col_third container_flex avt1_sec1 avt3">
+                                    <div class="col_third container_flex avt1_sec1">
                                         <img src="img/images/slide_sec1_avt3.png" alt="">
                                         <div class="group">
                                             <p class="text_person">David Tran</p>
@@ -194,10 +195,10 @@
                         </div>
                     </div>
 
-                    <div class="col_one-third slide_left">
+                    <div class="col_one-third slide_left ipap">
 
-                        <div class="group_same">
-                            <div class="slide_header container_flex space">
+                        <div class="group_same col_full">
+                            <div class="container_flex space">
                                 <ul class="experts container_flex">
                                     <li><i class="fa fa-genderless gender1"></i></li>
                                     <li><i class="fa fa-genderless gender2"></i></li>
@@ -215,7 +216,7 @@
                             </div>
 
                             <div class="container_flex experts">
-                                <div class="col_one-third">
+                                <div class="col_one-third zoom">
                                     <img src="img/images/slide_sec1_img2.jpg" alt="">
                                 </div>
 
@@ -233,7 +234,7 @@
 
 
                             <div class="container_flex experts">
-                                <div class="col_one-third">
+                                <div class="col_one-third zoom">
                                     <img src="img/images/slide_sec1_img3.jpg" alt="">
                                 </div>
 
@@ -251,7 +252,7 @@
 
 
                             <div class="container_flex experts">
-                                <div class="col_one-third">
+                                <div class="col_one-third zoom">
                                     <img src="img/images/slide_sec1_img4.jpg" alt="">
                                 </div>
 
@@ -319,7 +320,7 @@
                     </div>
 
                     <div class="group_sec2 container_flex experts">
-                        <div class="col_five">
+                        <div class="col_five zoom">
                             <img src="img/images/sec2_img1.jpg" alt="">
                             <div class="">
                                 <p class="bulum">Nemo Enim Ipsam Volup Iatim monla</p>
@@ -330,7 +331,7 @@
                             </div>
                         </div>
 
-                        <div class="col_five btnFashion">
+                        <div class="col_five btnFashion zoom">
                             <img src="img/images/sec2_img2.jpg" alt="">
                             <div class="">
                                 <p class="bulum">Nemo Enim Ipsam Volup Iatim monla</p>
@@ -341,7 +342,7 @@
                             </div>
                         </div>
 
-                        <div class="col_five btnFashion">
+                        <div class="col_five btnFashion zoom">
                             <img src="img/images/sec2_img3.jpg" alt="">
                             <div class="">
                                 <p class="bulum">Nemo Enim Ipsam Volup Iatim monla</p>
@@ -352,7 +353,7 @@
                             </div>
                         </div>
 
-                        <div class="col_five btnFashion">
+                        <div class="col_five btnFashion zoom">
                             <img src="img/images/sec2_img4.jpg" alt="">
                             <div class="">
                                 <p class="bulum">Nemo Enim Ipsam Volup Iatim monla</p>
@@ -363,7 +364,7 @@
                             </div>
                         </div>
 
-                        <div class="col_five btnFashion">
+                        <div class="col_five btnFashion zoom">
                             <img src="img/images/sec2_img5.jpg" alt="">
                             <div class="">
                                 <p class="bulum">Nemo Enim Ipsam Volup Iatim monla</p>
@@ -385,7 +386,7 @@
             <!-- ========sec3======= -->
             <div id="sec3" class="container margin_left-right">
                 <div class="group_same container_flex space margintop">
-                    <div class="experts container_flex space-between">
+                    <div class="experts container_flex space-between ipap">
                         <ul class="container_flex">
                             <li><i class="fa fa-genderless gender1"></i></li>
                             <li><i class="fa fa-genderless gender2"></i></li>
@@ -400,18 +401,22 @@
                             <p class="magalla opacity">Magalla Magazine - News and Business Blog</p>
                         </div>
                     </div>
+
                     <hr class="opacity" style="width: 100%;">
-                    <div class="container_flex">
-                        <div class="col_two-third experts minusright">
+
+
+                    <div class="container_flex flex_wrap">
+                        <div class="col_two-third experts minusright ipap">
                             <div class="container_flex">
-                                <div class="col_two-third position-re">
+                                <div class="col_two-third position-re zoom">
                                     <img src="img/images/sec3_img1.jpg" alt="">
                                     <div class="container_flex position-abs space btn-sec3">
                                         <div class="text_header-slide container_flex">
                                             <p class="textTranf"><a href="" class="tech text_same">it-tech</a></p>
                                             <p class="textTranf"><a href=""
                                                     class="travel cadetblue_bg text_same">Business</a></p>
-                                            <p class="textTranf"><a href="" class="fashion text_same">fashion</a></p>
+                                            <p class="textTranf"><a href="" class="fashion text_same">fashion</a>
+                                            </p>
                                         </div>
                                         <div class="icon_video bg_gray">
                                             <i class="fa fa-image"></i>
@@ -425,7 +430,8 @@
                                             <i class="fa fa-calendar"></i> 20 jan 2019 |
                                             <i class="fa fa-commenting"></i> 05
                                         </p>
-                                        <p class="cliquam">Cliquam eget arcu magna, vel congue dui. Nunc autor mauris
+                                        <p class="cliquam">Cliquam eget arcu magna, vel congue dui. Nunc autor
+                                            mauris
                                             tempor
                                             leo
                                             aliquam vel porta ante sodales, msan ceonling vento ...
@@ -436,7 +442,7 @@
                                     </div>
                                 </div>
                             </div>
-
+                            <!-- ======================================================================== -->
                             <div class="margintop">
                                 <div class="container_flex">
                                     <div class="col_half container_flex minus">
@@ -453,7 +459,8 @@
                                     <div class="col_half container_flex">
                                         <img src="img/images/sec3_img10.jpg" alt="" class="col_third btnFashion">
                                         <div class="btnFashion">
-                                            <p class="bulum">Krypton: Responsive Business and Proin dictum elemntum.</p>
+                                            <p class="bulum">Krypton: Responsive Business and Proin dictum elemntum.
+                                            </p>
                                             <p class="day opacity">
                                                 <i class="fa fa-calendar"></i> 20 Jun 2019 |
                                                 <i class="fa fa-commenting"></i> 45
@@ -486,13 +493,13 @@
                                         </div>
                                     </div>
 
-                                    <!--  -->
+
                                 </div>
                             </div>
 
                         </div>
 
-                        <div class="col_one-third experts page_background group_same heightfull">
+                        <div class="col_one-third experts page_background group_same heightfull ipap">
                             <p class="cadetblue_bg row textTranf text_white popular">Business most popular</p>
                             <div class="container_flex experts">
                                 <img src="img/images/sec3_img2.jpg" alt="" class="col_five">
@@ -555,6 +562,8 @@
 
                         </div>
                     </div>
+
+
                 </div>
 
                 <div class="borderbottom"></div>
@@ -580,11 +589,13 @@
                                 health</p>
                         </div>
                     </div>
+
                     <hr class="opacity" style="width: 100%;">
-                    <div class="container_flex">
-                        <div class="col_two-third experts minusright">
+
+                    <div class="container_flex flex_wrap">
+                        <div class="col_two-third experts minusright ipap">
                             <div class="container_flex">
-                                <div class="col_two-third position-re">
+                                <div class="col_two-third position-re zoom">
                                     <img src="img/images/sec4_img1.jpg" alt="">
                                     <div class="container_flex position-abs space btn-sec3">
                                         <div class="text_header-slide container_flex">
@@ -671,15 +682,15 @@
 
                         </div>
 
-                        <div class="col_one-third experts position-re">
+                        <div class="col_one-third experts position-re zoom ipap">
                             <!-- <div class=""> -->
                             <img src="img/images/sec4_img6.jpg" alt="">
                             <!-- </div> -->
-                            <div class="position-abs btn-sec3">
+                            <!-- <div class="position-abs btn-sec3">
                                 <p class="galay text_white textTranf">galaxy S8</p>
                                 <p class="galay text_white textTranf">specs & Features</p>
                                 <p><a href="" class="text_white">click here</a></p>
-                            </div>
+                            </div> -->
 
                         </div>
                     </div>
@@ -707,11 +718,15 @@
                                 health</p>
                         </div>
                     </div>
+
+
                     <hr class="opacity" style="width: 100%;">
-                    <div class="container_flex">
-                        <div class="col_two-third experts minusright">
+
+
+                    <div class="container_flex flex_wrap">
+                        <div class="col_two-third experts minusright ipap">
                             <div class="container_flex">
-                                <div class="col_two-third position-re">
+                                <div class="col_two-third position-re zoom">
                                     <img src="img/images/sec5_img1.jpg" alt="">
                                     <div class="container_flex position-abs space btn-sec3">
                                         <div class="text_header-slide container_flex">
@@ -797,7 +812,7 @@
 
                         </div>
 
-                        <div class="col_one-third experts page_background group_same heightfull">
+                        <div class="col_one-third experts page_background group_same heightfull ipap">
                             <p class="red_bg row textTranf text_white popular">Fashion most popular</p>
                             <div class="container_flex experts">
                                 <img src="img/images/sec5_img9.jpg" alt="" class="col_five">
@@ -870,11 +885,14 @@
                             <p class="magalla opacity">New builds in singapore: innovative office designs attract...</p>
                         </div>
                     </div>
+
                     <hr class="opacity" style="width: 100%;">
-                    <div class="container_flex">
-                        <div class="col_two-third experts minusright">
+
+
+                    <div class="container_flex flex_wrap">
+                        <div class="col_two-third experts minusright ipap">
                             <div class="container_flex">
-                                <div class="col_two-third position-re">
+                                <div class="col_two-third position-re zoom">
                                     <img src="img/images/sec4_img1.jpg" alt="">
                                     <div class="position-abs space btn-sec3">
                                         <div class="text_header-slide container_flex">
@@ -959,15 +977,15 @@
 
                         </div>
 
-                        <div class="col_one-third experts position-re">
+                        <div class="col_one-third experts position-re zoom ipap">
                             <!-- <div class=""> -->
                             <img src="img/images/sec6_img6.jpg" alt="">
                             <!-- </div> -->
-                            <div class="position-abs btn-sec3">
+                            <!-- <div class="position-abs btn-sec3">
                                 <p class="galay text_white textTranf">Why book</p>
                                 <p class="galay text_white textTranf">With my tour?</p>
                                 <p><a href="" class="text_white textTranf">learn more</a></p>
-                            </div>
+                            </div> -->
 
                         </div>
                     </div>
@@ -994,16 +1012,18 @@
                             <p class="magalla opacity">The future of tripods gets rid of all those fiddly knobs</p>
                         </div>
                     </div>
+
                     <hr class="opacity" style="width: 100%;">
-                    <div class="container_flex">
-                        <div class="col_two-third experts minusright">
+
+                    <div class="container_flex flex_wrap">
+                        <div class="col_two-third experts minusright ipap">
                             <div class="container_flex">
-                                <div class="col_two-third position-re">
+                                <div class="col_two-third position-re zoom">
                                     <img src="img/images/sec7_img0.jpg" alt="">
                                     <div class="position-abs space btn-sec3">
-                                        <!-- <div class="text_header-slide">
+                                        <div class="text_header-slide">
                                             <p class="textTranf"><a href="" class="tech text_same">it-tech</a></p>
-                                        </div> -->
+                                        </div>
 
                                     </div>
                                 </div>
@@ -1082,7 +1102,7 @@
 
                         </div>
 
-                        <div class="col_one-third experts page_background group_same heightfull">
+                        <div class="col_one-third experts page_background group_same heightfull ipap">
                             <p class="orange_bg row textTranf text_white popular">Fashion most popular</p>
                             <div class="container_flex experts">
                                 <img src="img/images/sec7_img5.jpg" alt="" class="col_five">
@@ -1170,7 +1190,7 @@
                     </div>
                 </div>
                 <div class="container_flex">
-                    <div class="col_half position-re experts">
+                    <div class="col_half position-re experts zoom">
                         <img src="img/images/sec8_img1.jpg" alt="">
                         <div class="container_flex position-abs space btn-sec3">
                             <div class="text_header-slide container_flex">
@@ -1188,7 +1208,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col_half position-re experts minus10">
+                    <div class="col_half position-re experts minus10 zoom">
                         <img src="img/images/sec8_img2.jpg" alt="">
                         <div class="container_flex position-abs space btn-sec3">
                             <div class="text_header-slide container_flex">
@@ -1229,8 +1249,8 @@
                             <li class="trending textTranf">Editor's picks</li>
                         </ul>
                     </div>
-                    <div class="container_flex">
-                        <div class="col_two-third">
+                    <div class="container_flex flex_wrap">
+                        <div class="col_two-third ipap">
                             <div class="container_flex">
                                 <div class="col_half experts position-re">
                                     <img src="img/images/sec9_img1.jpg" alt="">
@@ -1311,7 +1331,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col_one-third experts page_background group_same heightfull border none-boxshadow">
+                        <div class="col_one-third experts page_background group_same heightfull border none-boxshadow ipap">
                             <p class="cadetblue_bg row textTranf text_white popular">most viewed</p>
                             <div class="container_flex">
                                 <p class="opacity margin-onunder" style="font-size: 45px;">1</p>
@@ -1361,6 +1381,7 @@
                 </div>
             </div>
         </div>
+
         <hr style="width: 100%;">
 
         <div id="sec10" class="container margin_left-right">
@@ -1494,7 +1515,7 @@
         </div>
     </footer>
 
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>
