@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div id="login" class="container">
+
+        <form>
+            <!-- <span onclick="document.getElementById('login').style.display='none'" class="close"
+                title="Close Modal">&times;</span> -->
+            <h2><a href="" class="clickwo">WorldNews</a></h2>
+            <h4>Tạo tài khoản miễn phí của bạn.</h4>
+            <a href="" class="google">
+                <p>
+                    <span class="color_blue">G</span><span class="color_red">o</span><span
+                        class="color_orange">o</span><span class="color_blue">g</span><span
+                        class="color_green">l</span><span class="color_red">e</span>
+                </p>
+            </a>
+            <div class="div">
+                <div class="hr">
+                    <hr class="hr1">
+                    <p class="Hoac">Hoặc</p>
+                    <hr class="hr2">
+                </div>
+                <p class="create">Đăng nhập với gmail</p>
+            </div>
+
+            <div class="input-div name">
+                <div class="">
+                    <i class="i"></i>
+                </div>
+                <div class="div">
+                    <p>Họ tên bạn</p>
+                    <input type="text" required class="input">
+                </div>
+            </div>
+
+            <div class="input-div mail">
+                <div class="">
+                    <i class="i"></i>
+                </div>
+                <div class="div">
+                    <p>Địa chỉ mail/ số điện thoại</p>
+                    <input type="text" required class="input">
+                </div>
+            </div>
+
+            <div class="input-div pass">
+                <div class="">
+                    <i class="i"></i>
+                </div>
+                <div class="div">
+                    <p>Nhập Password</p>
+                    <input type="password" required class="input" id="pass" onclick="pass()">
+                    <i class="fa fa-eye eye" onclick="eye()"></i>
+                </div>
+            </div>
+
+            <div class="forget">
+                <label><input type="checkbox">Nhớ mật khẩu.</label>
+                <a class="a">Quên mật khẩu?</a>
+            </div>
+            <a href="index.html"><input type="submit" class="btn" value="Login"></a>
+
+        </form>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
