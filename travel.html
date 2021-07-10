@@ -13,124 +13,121 @@
 
 <body>
     <header>
-        <nav class="navbar nav1">
+
+
+        <nav class="navbar navbar-expand-lg bg-light" id="menu1">
             <div class="container">
+                <div class="navbar-collapse d-flex">
 
-                <div class="navbar-collapse">
                     <div class="navbar-header">
-                        <a class="navbar-brand cadetblue_bg" href="#">Friday, may 5, 2021</a>
+                        <a class="navbar-brand cadetblue_bg text_white mobi" href="#">Friday, may 5, 2021</a>
                     </div>
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">RTL</a></li>
-                        <li><a href="#">Mobile Theme</a></li>
-                        <li><a href="#">Forums</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">About Wordnews</a></li>
 
+                    <ul class="navbar-nav mr-auto flex_row">
+                        <li class="nav-item"><a class="nav-link" href="">RTL</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Mobile Theme</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Forums</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">About Wordnews</a></li>
                     </ul>
-                    <form class="navbar-form navbar-right">
-                        <div class="form-group">
+
+
+                    <form class="navbar-form">
+                        <div class="form-group d-flex">
                             <input type="text" class="form-control" placeholder="Your mail address" required>
+                            <button type="submit" class="btn cadetblue_bg text_white">subscribe</button>
                         </div>
-                        <button type="submit" class="btn cadetblue_bg">subscribe</button>
                     </form>
 
                 </div>
             </div>
+
         </nav>
 
 
-        <nav class="navbar nav2">
+
+        <nav class="navbar navbar-expand-md" id="menu2">
             <div class="container">
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="index.html">Features</a></li>
-                        <li><a href="index.html">Business</a></li>
-                        <li><a href="mobile.html">Mobile</a></li>
-                        <li><a href="fashion.html">Fashion</a></li>
-                        <li><a href="index.html">It-tech</a></li>
+                        <li class="active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="index.html">Features</a></li>
+                        <li><a class="nav-link" href="index.html">Business</a></li>
+                        <li><a class="nav-link" href="mobile.html">Mobile</a></li>
+                        <li><a class="nav-link" href="fashion.html">Fashion</a></li>
+                        <li><a class="nav-link" href="itTech.html">It-tech</a></li>
                         <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="index.html">Travel & sport
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="index.html">Travel & sport
                                 <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="travel.html">Travel</a></li>
-                                <li><a href="sport.html">sport</a></li>
+                                <li><a class="nav-link" href="travel.html">Travel</a></li>
+                                <li><a class="nav-link" href="sport.html">sport</a></li>
                             </ul>
                         </li>
-                        <li><a href="index.html">Blog</a></li>
-                        <li><a href="index.html">Shop</a></li>
-                        <li class="li"><a href="index.html">Pages</a></li>
+                        <li><a class="nav-link" href="index.html">Blog</a></li>
+                        <li class="li"><a class="nav-link" href="index.html">Shop</a></li>
 
                     </ul>
-                    <div class="navbar-right pc" action="">
-                        <div class="icon-bar">
-                            <a><i class="fa fa-search"></i></a>
-                            <a href="login.html" target="_blank"><i class="fa fa-user"></i></a>
-                            <a><i class="fa fa-shopping-cart cart"></i></a>
-                        </div>
-                    </div>
 
                 </div>
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <div class="navbar-right an" action="">
-                        <div class="icon-bar">
-                            <a><i class="fa fa-search"></i></a>
-                            <a><i class="fa fa-user"></i></a>
-                            <a><i class="fa fa-shopping-cart cart"></i></a>
-                        </div>
+                <div class="navbar-right" action="">
+                    <div class="icon-bar d-flex">
+                        <a class=""><i class="fa fa-search"></i></a>
+                        <a class=""><i class="fa fa-user"></i></a>
+                        <a class="color_cart text_white"><i class="fa fa-shopping-cart"></i></a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+
     <main>
-        <div id="logo">
-            <div class="container headerBetween">
-                <div class="row">
-                    <div class="col-md-6 d_flex w">
-                        <p class="logo margin-onunder">W</p>
-                        <p class="textLogo margin-onunder">World<span class="opacity">News</span></p>
-                    </div>
-                    <div class="col-md-6 background">
-                        <div class="textBanner">
-                            <img src="img/images/bannerLogo.png" alt="">
+        <section>
+            <div id="logo">
+                <div class="container">
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="d-flex w">
+                                <p class="logo mt-2">W</p>
+                                <p class="textLogo">World<span class="opacity4">News</span></p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="textBanner zoom">
+                                <img src="img/images/banner.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
         <section>
             <div class="sec1">
-                <div class="panner">
-                    <!-- <div class="zoom"> -->
+                <div class="panner mt-2 mobi_margin">
                     <img src="img/images/panner.png" alt="phongcanh">
-                    <!-- </disv> -->
                 </div>
 
                 <div class="Nei">
                     <p class="textBold">Neighborhood Guides</p>
-                    <p>Not sure where to stay? We've created neighborhood guides for cities all around the world.</p>
+                    <p class="mobi_text">Not sure where to stay? We've created neighborhood guides for cities all around the world.</p>
                 </div>
                 <div class="anh">
                     <div class="container-fluid">
                         <div class="row experts">
-                            <div class="col-md-8">
+                            <div class="col-md-8 ipap_slide">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <h1 class="same place"><a class="#">Mexico City</a></h1>
+                                        <h1 class="same place"><a href="#">Mexico City</a></h1>
                                         <div class="zoom">
                                             <img src="img/images/mexico.jpg" alt="mexico" class="same_img">
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 mobi_avt">
                                         <h1 class="same place"><a href="">New York</a></h1>
                                         <div class="zoom">
                                             <img src="img/images/newYork.jpg" alt="newYork" class="same_img">
@@ -140,20 +137,20 @@
 
                                 <div class="row margintop">
                                     <div class="col-md-6">
-                                        <h1 class="same place"><a class="#">Tokyo</a></h1>
+                                        <h1 class="same place"><a href="#">Tokyo</a></h1>
                                         <div class="zoom">
                                             <img src="img/images/Tokio.jpg" alt="tokyo" class="same_img">
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <h1 class="same place"><a class="#">Pari</a></h1>
+                                    <div class="col-md-6 mobi_avt">
+                                        <h1 class="same place"><a href="#">Pari</a></h1>
                                         <div class="zoom">
                                             <img src="img/images/pari.jpg" alt="mexico" class="same_img">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 ipap_slide mobi_avt fartop">
                                 <h1 class="same h1song"><a href="#">Invite friends, earn travel credit</a></h1>
                                 <div class="zoom">
                                     <img src="img/images/song.jpg" alt="" class="same_img song">
@@ -168,36 +165,44 @@
 
         <section>
             <div class="book container-fluid">
-                <div class="col-md-4">
-                    <div class="row">
+                <div class="row">
+                    <div class="col-md-4">
                         <p class="textfooter">Travel</p>
-                        <p>From apartments and room to trehouse and boats: stay in unique spaces in192 countries.</p>
+                        <p class="pl-3">From apartments and room to trehouse and boats: stay in unique spaces in192
+                            countries.</p>
                         <p class="fotertext"><a href="">See how to travel on Airbnb</a></p>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="row">
+
+                    <div class="col-md-4">
                         <p class="textfooter">Host</p>
-                        <p>Renting out your unused space coould pay your bills or fund your next vacation.</p>
+                        <p class="pl-3">Renting out your unused space coould pay your bills or fund your next vacation.
+                        </p>
                         <p class="fotertext"><a href="">Learn more about hosting</a></p>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="row">
+                    <div class="col-md-4">
                         <p class="textfooter">Trust and safety</p>
-                        <p>From Verified ID to our worldwide customer support team, we've got your back.</p>
+                        <p class="pl-3">From Verified ID to our worldwide customer support team, we've got your back.
+                        </p>
                         <p class="fotertext"><a href="">Learn more about trust at Airbnb</a></p>
                     </div>
                 </div>
+
             </div>
         </section>
 
+
+    </main>
+
+    <!-- -------------------- -->
+
+    <footer>
         <section>
-            <div class="container d_flex margintop">
+            <div class="container d-flex mt-3" id="menuFooter">
 
-                <p class="cadetblue_bg breaking"><a href="">topics</a></p>
+                <p class="mt-1"><a href="" class="text_white p-2 cadetblue_bg">
+                        TOPICS</a></p>
 
-                <ul class="d_flex appfooter">
+                <ul class="d-flex appfooter">
                     <li><a href="#">All today's stories</a></li>
                     <li><a href="#">US work & careers</a></li>
                     <li><a href="#">Internet of things</a></li>
@@ -211,21 +216,17 @@
                 </ul>
             </div>
         </section>
-    </main>
 
-    <!-- -------------------- -->
-
-    <footer>
         <div id="footer">
             <div class="container">
-                <div class="margintop">
-                    <div class="col-md-4">
-                        <div class="d_flex w">
-                            <p class="logo margin-onunder">W</p>
-                            <p class="textLogo margin-onunder">World<span class="opacity">News</span></p>
+                <div class="row">
+                    <div class="col-md-4 mt-5 mb-5">
+                        <div class="d-flex w">
+                            <p class="logo">W</p>
+                            <p class="textLogo">World<span class="opacity6">News</span></p>
                         </div>
 
-                        <div class="row margintop">
+                        <div class="row mt-4">
                             <div class="col-md-6">
                                 <ul>
                                     <li><a href="#">About Us</a></li>
@@ -246,20 +247,20 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="margintop">
-                            <p class="marginbottom opacity">WorldNews helps you navigate the WN ecosystem to find
+                        <div class="mb-5">
+                            <p class="opacity6">WorldNews helps you navigate the WN ecosystem to find
                                 the
                                 products you want and the advice you need to get the job done.
                             </p>
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 mt-5">
 
                         <p class="title">Categories</p>
 
 
-                        <div class="row margintop">
+                        <div class="row mt-3">
                             <div class="col-md-6">
                                 <ul>
                                     <li><a href="#">Business</a></li>
@@ -277,9 +278,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="margintop d_flex">
-                            <p class="opacity8 title">follow us:</p>
-                            <div class="follow d_flex">
+                        <div class="d-flex mt-3">
+                            <p class="opacity6 title">follow us:</p>
+                            <div class="follow d-flex">
                                 <p class="blue_bg"><a href=""><i class="fa fa-facebook"></i></a></p>
                                 <p class="sky_bg"><a href=""><i class="fa fa-twitter"></i></a></p>
                                 <p class="red_bg"><a href=""><i class="fa fa-pinterest-p"></i></a>
@@ -290,30 +291,39 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 mt-5">
                         <p class="title">instagram</p>
-                        <div class="row">
+                        <div class="row mt-4 mobi_insta">
                             <div class="col-md-4">
-                                <img src="img/images/sec9_img2.jpg" alt="">
+                                <div class="zoom">
+                                    <img src="img/images/sec5_img1.jpg" alt="">
+                                </div>
                             </div>
                             <div class="col-md-4">
-                                <img src="img/images/sec9_img1.jpg" alt="">
+                                <div class="zoom">
+                                    <img src="img/images/sec2_img1.jpg" alt="">
+                                </div>
                             </div>
                             <div class="col-md-4">
-                                <img src="img/images/sec9_img4.jpg" alt="">
+                                <img src="img/images/sec2_img2.jpg" alt="">
                             </div>
-
                         </div>
 
-                        <div class="row margintop">
+                        <div class="row mt-4 mobi_insta">
                             <div class="col-md-4">
-                                <img src="img/images/slide_sec1_img4.jpg" alt="">
+                                <div class="zoom">
+                                    <img src="img/images/slide_sec1_img4.jpg" alt="">
+                                </div>
                             </div>
                             <div class="col-md-4">
-                                <img src="img/images/sec2_img4.jpg" alt="">
+                                <div class="zoom">
+                                    <img src="img/images/sec4_img1.jpg" alt="">
+                                </div>
                             </div>
                             <div class="col-md-4">
-                                <img src="img/images/sec6_img3.jpg" alt="">
+                                <div class="zoom">
+                                    <img src="img/images/sec3_img1.jpg" alt="">
+                                </div>
                             </div>
 
                         </div>
@@ -324,9 +334,9 @@
         </div>
         <div id="footerBottom">
             <div class="container">
-                <div class="d_flex space-between">
-                    <p class="opacity8">@ 2019 WorldNews Media LLC. All Rights Reserved.</p>
-                    <p class="opacity8">Terms and Conditions / Privacy Statement / Market Data by 7 uptheme /
+                <div class="d-flex justify-content-between">
+                    <p class="opacity6">@ 2019 WorldNews Media LLC. All Rights Reserved.</p>
+                    <p class="opacity6">Terms and Conditions / Privacy Statement / Market Data by 7 uptheme /
                         AdChoices
                     </p>
                 </div>
